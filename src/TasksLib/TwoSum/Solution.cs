@@ -8,7 +8,7 @@
 
 public class Solution
 {
-    public static int[] Run(int[] nums, int target)
+    public int[] Run(int[] nums, int target)
     {
         for (int i = 0; i < nums.Length; i++)
         {

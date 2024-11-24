@@ -1,5 +1,3 @@
-using System;
-
 namespace TasksLib.TwoSum;
 
 public record ExampleModel : IExample<int[]>

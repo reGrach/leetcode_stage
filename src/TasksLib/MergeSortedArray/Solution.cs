@@ -1,7 +1,4 @@
-using System;
-
 namespace TasksLib.MergeSortedArray;
-
 
 /// <summary>
 /// You are given two integer arrays nums1 and nums2, sorted in non-decreasing order,
@@ -16,7 +13,7 @@ namespace TasksLib.MergeSortedArray;
 
 public class Solution
 {
-    public static void Merge(int[] nums1, int m, int[] nums2, int n)
+    public void Merge(int[] nums1, int m, int[] nums2, int n)
     {
         if (m == 0)
         {
@@ -51,39 +48,6 @@ public class Solution
             for (int k = 0; k < n + m; k++)
                 if (nums1[k] != newArray[k])
                     nums1[k] = newArray[k];
-
-
-
-
-
-
-            // int i2 = 0;
-            // int iPast = m;
-
-            // for (int i1 = 0; i1 < m + n; i1++)
-            // {
-            //     if (nums1[i1] > nums2[i2])
-            //     {
-            //         nums1[iPast] = nums1[i1];
-            //         nums1[i1] = nums2[i2];
-            //         iPast++;
-            //         i2++;
-            //     }
-            //     else if (nums1[i1] == 0)
-            //     {
-            //         nums1[i1] = nums2[i2];
-            //         i2++;
-            //     }
-            //     else if (i1 < ((m + n) - 1) && nums1[i1] > nums1[i1 + 1] && nums1[i1 + 1] != 0)
-            //     {
-            //         int dumm = nums1[i1 + 1];
-            //         nums1[i1 + 1] = nums1[i1];
-            //         nums1[i1] = dumm;
-            //     }
-
-            //     if (i2 >= n)
-            //         break;
-            // }
         }
     }
 }

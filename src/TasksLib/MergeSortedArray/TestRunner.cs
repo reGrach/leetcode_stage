@@ -1,5 +1,3 @@
-using System;
-
 namespace TasksLib.MergeSortedArray;
 
 public class TestRunner : ITest
@@ -9,7 +7,7 @@ public class TestRunner : ITest
         int i = 1;
         foreach (var _exmpl in ExampleModel.GetExamples())
         {
-            Solution.Merge(_exmpl.ArrayOne, _exmpl.NumOne, _exmpl.ArrayTwo, _exmpl.NumTwo);
+            new Solution().Merge(_exmpl.ArrayOne, _exmpl.NumOne, _exmpl.ArrayTwo, _exmpl.NumTwo);
             if (Enumerable.SequenceEqual(_exmpl.ArrayOne, _exmpl.Result))
                 Console.WriteLine($"Example {i}: SUCCESS");
             else

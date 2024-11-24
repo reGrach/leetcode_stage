@@ -1,5 +1,5 @@
 ﻿
 
 
-var test = new TasksLib.MergeSortedArray.TestRunner();
+var test = new TasksLib.RemoveElement.TestRunner();
 test.Run();
