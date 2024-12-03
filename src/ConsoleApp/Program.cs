@@ -1,5 +1,5 @@
 ﻿
 
 
-var test = new TasksLib.RemoveElement.TestRunner();
+var test = new TasksLib.MajorityElement.TestRunner();
 test.Run();
