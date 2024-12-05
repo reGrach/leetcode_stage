@@ -1,5 +1,5 @@
 ﻿
 
 
-var test = new TasksLib.MajorityElement.TestRunner();
+var test = new TasksLib.RomanToInteger.TestRunner();
 test.Run();
